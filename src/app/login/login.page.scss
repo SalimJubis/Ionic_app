@@ -1,0 +1,21 @@
+ion-content {
+    --background: #0081ca;
+}
+ 
+ion-slides {
+    height: 100%;
+    --bullet-background-active: #fff;
+    --bullet-background: #000;
+}
+
+ion-item {
+    --border-radius: 10px;
+    --background: white;
+    --color: rgb(0, 0, 0);
+    padding: 3px;
+    border: none;
+}
+
+h1{
+    color: white;
+}

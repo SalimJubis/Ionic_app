@@ -1,0 +1,52 @@
+
+<ion-content>
+  <ion-slides pager="true">
+
+    <ion-slide>
+      <ion-text color="light">
+        <img src="https://i1.wp.com/ionicacademy.com/wp-content/uploads/2019/10/async-code-course.png">
+        <ion-row color="primary" justify-content-center>
+          <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+            <h1>Iniciar Sesión</h1>
+            <div padding>     
+              <form [formGroup]="formularioLogin">
+                <ion-item>
+                  <ion-input formControlName="emailUser" type="email" placeholder="Email"></ion-input>    
+                </ion-item>
+                <ion-item>
+                  <ion-input formControlName="passUser" type="password" placeholder="Contraseña"></ion-input>       
+                </ion-item>
+                <ion-button (click)="validarUsuario()" color="light" [disabled]="formularioLogin.invalid">Iniciar Sesión</ion-button>
+              </form>
+            </div>
+          </ion-col>
+      </ion-row>  
+      </ion-text>
+    </ion-slide>
+ 
+    <ion-slide>
+      <ion-text color="light">
+        <img src="https://i1.wp.com/ionicacademy.com/wp-content/uploads/2020/06/ionic-everywhere-course.png">
+        <ion-row color="primary" justify-content-center>
+          <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+            <h1>Registrarme</h1>
+            <div padding>
+              <form [formGroup]="formularioRegistro">
+                <ion-item>
+                  <ion-input formControlName="nameUser1" placeholder="Nombre"></ion-input>        
+                </ion-item>
+                <ion-item>
+                  <ion-input formControlName="emailUser1" placeholder="Email"></ion-input>    
+                </ion-item>
+                <ion-item>
+                  <ion-input formControlName="passUser1" type="password" placeholder="Contraseña"></ion-input>       
+                </ion-item>
+                <ion-button (click)="registrarUsuario()" color="light" [disabled]="formularioRegistro.invalid">Registrarme</ion-button>
+              </form>
+            </div>
+          </ion-col>
+      </ion-row>  
+      </ion-text>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
